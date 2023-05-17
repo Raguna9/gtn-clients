@@ -1,12 +1,12 @@
 import React from "react";
-import { ReactComponent as LoaderIcon } from "./loader.svg";
+import loaderSvg from "./loader.svg";
 import "./loadingOverlay.css";
 
 function LoadingOverlay() {
   return (
     <div className="modal is-active loading-overlay">
       <div className="loading-icon">
-        <LoaderIcon />
+        <img src={loaderSvg} alt="Loader" />
       </div>
     </div>
   );
